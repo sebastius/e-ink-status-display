@@ -15,8 +15,7 @@ hour_table = {
 }
 
 def time_str(hours, minutes):
-    hours = localtime[3] % 12
-    minutes = localtime[4]
+    hours = hours % 12
     formatstr = 'Het is {}'
 
     if 0 < minutes < 3:
